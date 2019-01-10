@@ -223,7 +223,7 @@ a:hover {
   position: relative;
   padding-top: 75%;
   /* 4:3 Aspect Ratio */
-  padding: 1em;
+  padding: 30px;
   border-radius: 22px;
   background-image: url(../medias/bg.png);
   background-position: center center;
