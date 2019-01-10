@@ -34,14 +34,22 @@ body {
   justify-content: center;
 }
 
+#bg {
+  background: #121821 url(../medias/titlebg.png) center fixed no-repeat;
+}
+
 p {
   font-family: "Baumans", sans-serif;
   color: #fff;
   font-size: 2rem;
 }
 
+a {
+  color: #fff;
+}
+
 h1 {
-  font-size: 10rem;
+  font-size: 9rem;
   font-weight: 100;
   font-style: normal;
   color: #fff;
@@ -56,6 +64,16 @@ h1 {
 @media screen and (max-width: 990px) {
   h1 {
     font-size: 7em;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 542px) {
+  h1 {
+    font-size: 5em;
   }
 }
 h1::-moz-selection {
@@ -109,8 +127,6 @@ h3 {
   text-shadow: 0 0 2px #fff, 0 0 5px #0df, 0 0 10px #0df;
 }
 
-
-
 h4 {
   font-family: "Warnes", sans-serif;
   font-size: 3rem;
@@ -121,7 +137,7 @@ h4 {
   margin-right: 480px;
   text-transform: uppercase;
   display: inline-block;
-  margin-top: 230px;
+  margin-top: 18vh;
   margin-bottom: -10px;
   text-shadow: 2px 2px 4px #07c;
   animation: youare 1.5s infinite alternate;
@@ -133,9 +149,21 @@ h4 {
     margin-right: 380px;
   }
 }
+@media screen and (max-width: 768px) {
+  h4 {
+    font-size: 1.5em;
+    margin-right: 340px;
+  }
+}
+@media screen and (max-width: 540px) {
+  h4 {
+    font-size: 1.2em;
+    margin-right: 310px;
+  }
+}
 a:hover {
-  color: #121821;
   text-decoration: none;
+  color: #0df;
 }
 
 /* H1 H2 H4 animation neon */
@@ -150,7 +178,17 @@ a:hover {
   }
 }
 @keyframes fulllight {
-  0%, 100% {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: -0.1rem -0.1rem 0.1rem #f00, 0.1rem 0.1rem 0.5rem #f00, 0 0 1rem var(--neon-text-color), 0 0 2rem var(--neon-text-color), 0 0 3rem var(--neon-text-color), 0 0 4rem var(--neon-text-color), 0 0 5rem var(--neon-text-color);
+    box-shadow: 0 0 0.2rem #04f, inset 0 0 0.2rem #04f, 0 0 1rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color), inset 0 0 1.5rem var(--neon-border-color), inset 0 0 1.5rem var(--neon-border-color);
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    box-shadow: none;
+  }
+}
+@keyframes old {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
     text-shadow: -0.1rem -0.1rem 0.1rem #f00, 0.1rem 0.1rem 0.5rem #f00, 0 0 2rem var(--neon-text-color), 0 0 4rem var(--neon-text-color);
     box-shadow: 0 0 0.2rem #04f, inset 0 0 0.2rem #04f, 0 0 1rem var(--neon-border-color), inset 0 0 1rem var(--neon-border-color);
   }
@@ -177,8 +215,8 @@ a:hover {
 /* ===================================== */
 .button {
   display: inline-block;
-  padding: 15px 80px;
-  margin: 60px;
+  padding: 15px 50px;
+  margin: 5vh;
   font-size: 34px;
   font-weight: bold;
   cursor: pointer;
@@ -193,7 +231,10 @@ a:hover {
 }
 
 .button:hover {
-  background-color: #d0d0d0;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  box-shadow: 0 9px #999;
 }
 
 .button:active {
@@ -211,14 +252,12 @@ a:hover {
 }
 
 #displayZone {
-
   font-family: "Baumans", sans-serif;
-  font-size: 30px;
+  font-size: 5rem;
   font-weight: 20;
-  text-align: left;
+  text-align: right;
   color: #fff;
   text-shadow: 0 0 2px #fff, 0 0 5px #0df, 0 0 10px #0df;
-
   border: 22px solid #d8d8d8;
   position: relative;
   padding-top: 75%;
@@ -228,6 +267,12 @@ a:hover {
   background-image: url(../medias/bg.png);
   background-position: center center;
   background-size: contain;
+  height: 650px;
+  width: 950px;
+}
+
+#displayZone:hover {
+  color: #fff;
 }
 
 .center {
@@ -251,15 +296,25 @@ a:hover {
 }
 .fit {
   width: 100vh;
-  max-height: 75vh;
+  max-height: 100vh;
   margin: auto;
 }
 
 #footer {
-  margin-top: 80px;
   font-family: "Baumans", sans-serif;
   color: #fff;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 990px) {
+  #footer {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  #footer {
+    font-size: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
