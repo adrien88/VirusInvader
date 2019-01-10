@@ -1,0 +1,8 @@
+
+
+#displayZone{
+  display: grid;
+  /* justify-content: space-evenly; */
+  padding: 10px;
+  background-color: blue;
+}
